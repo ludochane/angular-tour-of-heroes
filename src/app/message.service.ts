@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class MessageService {
   messages: string[] = [];
@@ -13,4 +13,6 @@ export class MessageService {
   clear() {
     this.messages = [];
   }
+
+  constructor() { }
 }
